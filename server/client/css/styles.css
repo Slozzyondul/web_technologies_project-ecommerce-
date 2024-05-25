@@ -145,3 +145,9 @@ main {
 #checkout-button:hover {
     background-color: #0069d9;
 }
+
+/* Style for images to fit well on mobile phones */
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
