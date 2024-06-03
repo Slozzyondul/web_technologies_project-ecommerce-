@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture E-commerce</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <header class="mb-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+                <a class="navbar-brand" href="#">
+                    <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top rounded-circle">
+                    Furniture E-commerce
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cart">Cart (<span id="cart-count">0</span>)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="mb-4">
+            <img src="https://source.unsplash.com/1600x400/?furniture" alt="Furniture" class="img-fluid rounded shadow-sm">
+        </div>
+        <main>
+            <section id="hero" class="text-center py-5 bg-gray-100 rounded-lg shadow-sm">
+                <h2 class="text-4xl font-bold">Welcome to Our Furniture Store</h2>
+                <p class="mt-4 text-lg">Discover a wide range of high-quality furniture for your home and office.</p>
+            </section>
+            <section id="products" class="my-5">
+                <h2 class="text-3xl font-bold mb-4">Our Products</h2>
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?chair" class="card-img-top" alt="Chair">
+                            <div class="card-body">
+                                <h5 class="card-title">Comfortable Chair</h5>
+                                <p class="card-text">$99.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?table" class="card-img-top" alt="Table">
+                            <div class="card-body">
+                                <h5 class="card-title">Stylish Table</h5>
+                                <p class="card-text">$199.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?sofa" class="card-img-top" alt="Sofa">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern Sofa</h5>
+                                <p class="card-text">$299.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?bed" class="card-img-top" alt="Bed">
+                            <div class="card-body">
+                                <h5 class="card-title">Cozy Bed</h5>
+                                <p class="card-text">$399.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?cabinet" class="card-img-top" alt="Cabinet">
+                            <div class="card-body">
+                                <h5 class="card-title">Elegant Cabinet</h5>
+                                <p class="card-text">$149.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm hover:shadow-lg transition-shadow duration-300">
+                            <img src="https://source.unsplash.com/300x300/?bookshelf" class="card-img-top" alt="Bookshelf">
+                            <div class="card-body">
+                                <h5 class="card-title">Spacious Bookshelf</h5>
+                                <p class="card-text">$129.99</p>
+                                <a href="#" class="btn btn-primary btn-block">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cart" class="my-5">
+                <h2 class="text-3xl font-bold mb-4">Your Cart</h2>
+                <div id="cart-items" class="mb-4 p-3 bg-gray-100 rounded-lg shadow-sm">
+                    <p>Your cart is empty.</p>
+                </div>
+                <form id="checkout-form" class="bg-white p-4 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold mb-4">Checkout</h3>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block" id="checkout-button" disabled>Checkout</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-light text-center py-4 mt-5 shadow-sm">
+        <p>&copy; 2024 Furniture E-commerce. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
